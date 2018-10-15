@@ -14,9 +14,13 @@ CentOS release 6.8 (Final)
 
 [training@lion ~]$ sudo -i
 
+### Check `vm.swappiness` on all your nodesSet the value to `1` if necessary
+
 [root@lion ~]# sysctl vm.swappiness
 
 vm.swappiness = 1
+
+### Disable transparent hugepage support
 
 [root@lion ~]# echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag
 
@@ -49,6 +53,8 @@ done
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
+
+### Show the mount attributes of all volumes
 
 [root@lion data]# mount
 
@@ -88,6 +94,8 @@ cm_processes    7,9G  1,4M  7,9G   1% /var/run/cloudera-scm-agent/process
 
 /dev/sdc1        99G  452M   97G   1% /data
 
+### Show the reserve space of any non-root, `ext`-based volumes
+
 [root@lion data]# tune2fs -l /dev/sdc1 |grep Reserved
 
 Reserved block count:     262140
@@ -97,6 +105,8 @@ Reserved GDT blocks:      1017
 Reserved blocks uid:      0 (user root)
 
 Reserved blocks gid:      0 (group root)
+
+### List your network interface configuration
 
 [root@lion ~]# ifconfig -a
 
@@ -130,7 +140,7 @@ lo        Link encap:Local Loopback
 
 ​          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
 
-
+### List forward and reverse host lookups using `getent` or `nslookup`
 
 [root@lion ~]# getent ahostsv4 lion
 
@@ -154,11 +164,15 @@ Name:	lion1.westeurope.cloudapp.azure.com
 
 Address: 104.45.7.249
 
+### Show the `ntpd` service is running
+
 [root@lion ~]# ps -edaf |grep ntpd
 
 ntp       16001      1  0 08:42 ?        00:00:00 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
 
 root      16004   1748  0 08:42 pts/0    00:00:00 grep ntpd
+
+### Show the `nscd` service is running
 
 [root@lion ~]# ps -edaf |grep nscd
 
