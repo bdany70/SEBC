@@ -50,7 +50,7 @@ echo never > /sys/kernel/mm/transparent_hugepage/enabled
 
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
 
-[root@lion ~]# mount
+[root@lion data]# mount
 
 /dev/sda2 on / type ext4 (rw,discard)
 
@@ -68,17 +68,35 @@ none on /proc/sys/fs/binfmt_misc type binfmt_misc (rw)
 
 /dev/sdb1 on /mnt/resource type ext4 (rw,noatime,discard)
 
-[root@lion ~]# df -h
+cm_processes on /var/run/cloudera-scm-agent/process type tmpfs (rw,mode=0751)
+
+/dev/sdc1 on /data type ext4 (rw,noatime)
+
+[root@lion data]# df -h
 
 Filesystem      Size  Used Avail Use% Mounted on
 
-/dev/sda2        49G  803M   46G   2% /
+/dev/sda2        49G   11G   36G  24% /
 
-tmpfs           7,9G     0  7,9G   0% /dev/shm
+tmpfs           7,8G     0  7,8G   0% /dev/shm
 
-/dev/sda1       240M   45M  183M  20% /boot
+/dev/sda1       240M   70M  159M  31% /boot
 
 /dev/sdb1        99G  2,1G   92G   3% /mnt/resource
+
+cm_processes    7,9G  1,4M  7,9G   1% /var/run/cloudera-scm-agent/process
+
+/dev/sdc1        99G  452M   97G   1% /data
+
+[root@lion data]# tune2fs -l /dev/sdc1 |grep Reserved
+
+Reserved block count:     262140
+
+Reserved GDT blocks:      1017
+
+Reserved blocks uid:      0 (user root)
+
+Reserved blocks gid:      0 (group root)
 
 [root@lion ~]# ifconfig -a
 
