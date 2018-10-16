@@ -10,7 +10,6 @@
 
 ### Generate file with teragen
 
-<<<<<<< HEAD
 ```shell
 [hdfs@elephant ~]$ time hadoop jar /opt/cloudera/parcels/CDH/jars/hadoop-examples.jar teragen -Dmapred.map.tasks=1 5242880 /user/bdany70/unsorted 2>&1 | tee teragen_$(date +'%Y%m%d_%H%M%S')
 18/10/16 04:22:00 INFO client.RMProxy: Connecting to ResourceManager at elephant/10.0.0.7:8032
@@ -68,63 +67,6 @@ real	0m24.762s
 user	0m7.806s
 sys	0m0.538s
 ```
-=======
-`[hdfs@elephant ~]$ time hadoop jar /opt/cloudera/parcels/CDH/jars/hadoop-examples.jar teragen -Dmapred.map.tasks=1 5242880 /user/bdany70/unsorted 2>&1 | tee teragen_$(date +'%Y%m%d_%H%M%S')`
-`18/10/16 04:22:00 INFO client.RMProxy: Connecting to ResourceManager at elephant/10.0.0.7:8032`
-`18/10/16 04:22:01 INFO terasort.TeraGen: Generating 5242880 using 1`
-`18/10/16 04:22:01 INFO mapreduce.JobSubmitter: number of splits:1`
-`18/10/16 04:22:01 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps`
-`18/10/16 04:22:02 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1539626853206_0001`
-`18/10/16 04:22:02 INFO impl.YarnClientImpl: Submitted application application_1539626853206_0001`
-`18/10/16 04:22:02 INFO mapreduce.Job: The url to track the job: http://elephant:8088/proxy/application_1539626853206_0001/`
-`18/10/16 04:22:02 INFO mapreduce.Job: Running job: job_1539626853206_0001`
-`18/10/16 04:22:09 INFO mapreduce.Job: Job job_1539626853206_0001 running in uber mode : false`
-`18/10/16 04:22:09 INFO mapreduce.Job:  map 0% reduce 0%`
-`18/10/16 04:22:23 INFO mapreduce.Job:  map 100% reduce 0%`
-`18/10/16 04:22:23 INFO mapreduce.Job: Job job_1539626853206_0001 completed successfully`
-`18/10/16 04:22:23 INFO mapreduce.Job: Counters: 31`
-​	`File System Counters`
-​		`FILE: Number of bytes read=0`
-​		`FILE: Number of bytes written=147603`
-​		`FILE: Number of read operations=0`
-​		`FILE: Number of large read operations=0`
-​		`FILE: Number of write operations=0`
-​		`HDFS: Number of bytes read=82`
-​		`HDFS: Number of bytes written=524288000`
-​		`HDFS: Number of read operations=4`
-​		`HDFS: Number of large read operations=0`
-​		`HDFS: Number of write operations=2`
-​	`Job Counters` 
-​		`Launched map tasks=1`
-​		`Other local map tasks=1`
-​		`Total time spent by all maps in occupied slots (ms)=10542`
-​		`Total time spent by all reduces in occupied slots (ms)=0`
-​		`Total time spent by all map tasks (ms)=10542`
-​		`Total vcore-milliseconds taken by all map tasks=10542`
-​		`Total megabyte-milliseconds taken by all map tasks=10795008`
-​	`Map-Reduce Framework`
-​		`Map input records=5242880`
-​		`Map output records=5242880`
-​		`Input split bytes=82`
-​		`Spilled Records=0`
-​		`Failed Shuffles=0`
-​		`Merged Map outputs=0`
-​		`GC time elapsed (ms)=85`
-​		`CPU time spent (ms)=11470`
-​		`Physical memory (bytes) snapshot=376250368`
-​		`Virtual memory (bytes) snapshot=2795823104`
-​		`Total committed heap usage (bytes)=378011648`
-​	`org.apache.hadoop.examples.terasort.TeraGen$Counters`
-​		`CHECKSUM=11257830824958050`
-​	`File Input Format Counters` 
-​		`Bytes Read=0`
-​	`File Output Format Counters` 
-​		`Bytes Written=524288000`
-
-`real	0m24.762s`
-`user	0m7.806s`
-`sys	0m0.538s`
->>>>>>> df1f74866c9ee87ba82982a62676e12ae4e3495f
 
 ### Copy file from partner
 
@@ -271,12 +213,7 @@ Status: HEALTHY
  Number of racks:		1
 FSCK ended at Tue Oct 16 06:25:42 EDT 2018 in 1 milliseconds
 
-<<<<<<< HEAD
 
 The filesystem under path '/user/gianfolo' is HEALTHY
 
 ```
-
-=======
-`The filesystem under path '/user/gianfolo' is HEALTHY`
->>>>>>> df1f74866c9ee87ba82982a62676e12ae4e3495f
