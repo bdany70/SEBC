@@ -20,16 +20,16 @@
 `18/10/16 04:22:23 INFO mapreduce.Job:  map 100% reduce 0%`
 `18/10/16 04:22:23 INFO mapreduce.Job: Job job_1539626853206_0001 completed successfully`
 `18/10/16 04:22:23 INFO mapreduce.Job: Counters: 31`
-​	`File System Counters`
-​		`FILE: Number of bytes read=0`
-​		`FILE: Number of bytes written=147603`
-​		`FILE: Number of read operations=0`
-​		`FILE: Number of large read operations=0`
-​		`FILE: Number of write operations=0`
-​		`HDFS: Number of bytes read=82`
-​		`HDFS: Number of bytes written=524288000`
-​		`HDFS: Number of read operations=4`
-​		`HDFS: Number of large read operations=0`
+	`File System Counters`
+		`FILE: Number of bytes read=0`
+		`FILE: Number of bytes written=147603`
+		`FILE: Number of read operations=0`
+		`FILE: Number of large read operations=0`
+		`FILE: Number of write operations=0`
+		`HDFS: Number of bytes read=82`
+		`HDFS: Number of bytes written=524288000`
+		`HDFS: Number of read operations=4`
+		`HDFS: Number of large read operations=0`
 ​		`HDFS: Number of write operations=2`
 ​	`Job Counters` 
 ​		`Launched map tasks=1`
