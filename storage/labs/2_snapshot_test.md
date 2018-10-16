@@ -10,19 +10,17 @@
 [bdany70@elephant ~]$ hdfs dfs -copyFromLocal /tmp/SEBC-master.zip precious
 ```
 
-
-
 ### Enable snapshot
 
-![](/Users/daniele/Documents/Work/Cloudera-exams/SEBC/storage/labs/enable_snap.png)
+![](./enable_snap.png)
 
 ### Create snapshot
 
-![](/Users/daniele/Documents/Work/Cloudera-exams/SEBC/storage/labs/create_snap.png)
+![](./create_snap.png)
 
 ### Snapshot created
 
-![](/Users/daniele/Documents/Work/Cloudera-exams/SEBC/storage/labs/snap_created.png)
+![](./snap_created.png)
 
 ### Delete directory
 
@@ -151,16 +149,16 @@ drwx------   - bdany70 bdany70          0 2018-10-16 08:52 .Trash/181016085630
 
 ### Start restore
 
-![](/Users/daniele/Documents/Work/Cloudera-exams/SEBC/storage/labs/start_restore.png)
+![](./start_restore.png)
 
 ### Restore completed
 
-![](/Users/daniele/Documents/Work/Cloudera-exams/SEBC/storage/labs/restore_completed.png)
+![](./restore_completed.png)
 
 ### Verify restore
 
-![](/Users/daniele/Documents/Work/Cloudera-exams/SEBC/storage/labs/verify_restore.png)
+![](./verify_restore.png)
 
 ### Snapshots list
 
-![](/Users/daniele/Documents/Work/Cloudera-exams/SEBC/storage/labs/2_snapshot_list.png)
+![](./2_snapshot_list.png)
