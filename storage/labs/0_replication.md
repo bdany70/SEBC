@@ -1,9 +1,8 @@
 ### Create directory for parter and I
 
 ```shell
-`[hdfs@elephant ~]$ hadoop fs -mkdir /user/bdany70`
-
-`[hdfs@elephant ~]$ hadoop fs -mkdir /user/gianfolo
+[hdfs@elephant ~]$ hadoop fs -mkdir /user/bdany70
+[hdfs@elephant ~]$ hadoop fs -mkdir /user/gianfolo
 ```
 
 
