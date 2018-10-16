@@ -128,7 +128,7 @@
 
 ### Execute BDR
 
-![](/Users/daniele/Documents/Work/Cloudera-exams/SEBC/storage/labs/0_replication_bdr.png)
+![](./0_replication_bdr.png)
 
 ### Verify source and target
 
