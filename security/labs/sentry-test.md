@@ -1,4 +1,4 @@
-# Show tables
+# Show tables before granting role to bdany70
 
 ```
 [bdany70@elephant ~]$ klist -l
@@ -30,6 +30,12 @@ INFO  : OK
 +-----------+--+
 +-----------+--+
 No rows selected (3.405 seconds)
+```
+
+# Grant roles to bdany70
+
+```
+
 0: jdbc:hive2://localhost:10000/default> create role sentry_admin;
 INFO  : Compiling command(queryId=hive_20181017144242_1c2f8097-018d-4b20-a356-ac1ed4f174b3): create role sentry_admin
 INFO  : Semantic Analysis Completed
@@ -60,6 +66,11 @@ INFO  : Starting task [Stage-0:DDL] in serial mode
 INFO  : Completed executing command(queryId=hive_20181017144343_aa3093d0-8434-4116-ab5d-c0c864aa498b); Time taken: 0.037 seconds
 INFO  : OK
 No rows affected (0.183 seconds)
+```
+
+# Show table after grant
+
+```
 0: jdbc:hive2://localhost:10000/default> SHOW TABLES;
 INFO  : Compiling command(queryId=hive_20181017144343_3137c319-6472-4f1a-865e-ab6a9197130c): SHOW TABLES
 INFO  : Semantic Analysis Completed
