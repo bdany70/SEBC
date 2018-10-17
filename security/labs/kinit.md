@@ -1,6 +1,6 @@
 # kinit
 
-![](./labs/kinit.png)
+![](./kinit.png)
 
 # klist
 
