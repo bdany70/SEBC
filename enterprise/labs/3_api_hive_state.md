@@ -4,16 +4,18 @@
 curl -X POST -u bdany70:cloudera 'http://lion1.westeurope.cloudapp.azure.com:7180/api/v1/clusters/bdany70/services/hive/commands/stop'
 ```
 
+```json
 {
   "id" : 545,
   "name" : "Stop",
   "startTime" : "2018-10-17T08:56:48.432Z",
   "active" : true,
   "serviceRef" : {
-​    "clusterName" : "cluster",
-​    "serviceName" : "hive"
+    "clusterName" : "cluster",
+    "serviceName" : "hive"
   }
 }
+```
 
 ```shell
 curl -u bdany70:cloudera 'http://lion1.westeurope.cloudapp.azure.com:7180/api/v1/commands/545'
@@ -78,16 +80,18 @@ curl -u bdany70:cloudera 'http://lion1.westeurope.cloudapp.azure.com:7180/api/v1
 curl -X POST -u bdany70:cloudera 'http://lion1.westeurope.cloudapp.azure.com:7180/api/v1/clusters/bdany70/services/hive/commands/start'
 ```
 
+```json
 {
   "id" : 549,
   "name" : "Start",
   "startTime" : "2018-10-17T08:57:50.856Z",
   "active" : true,
   "serviceRef" : {
-​    "clusterName" : "cluster",
-​    "serviceName" : "hive"
+    "clusterName" : "cluster",
+    "serviceName" : "hive"
   }
 }
+```
 
 ```shell
 curl u bdany70:cloudera 'http://lion1.westeurope.cloudapp.azure.com:7180/api/v1/commands/549'
