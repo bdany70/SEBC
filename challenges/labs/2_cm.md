@@ -16,10 +16,3 @@ totale 48
 -rw-r--r-- 1 root root 1885 22 feb  2018 mysql-community-source.repo
 -rw-r--r-- 1 root root  282 20 set  2016 OpenLogic.repo
 ```
-
-## scm_prepare_database.sh
-
-```
-/usr/share/cmf/schema/scm_prepare_database.sh -h bdany70-02.westeurope.cloudapp.azure.com mysql scm scm Scm.1977
-```
-
